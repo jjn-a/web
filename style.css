@@ -28,7 +28,7 @@ body {
 }
 
 .navbar {
-    background-color: rgba(226, 243, 235, 0.9); /* Semi-transparent to blend with gradient */
+    background-color: rgba(226, 243, 235, 0.9); 
     padding: 1rem 2rem;
     display: flex;
     align-items: center;
@@ -38,13 +38,13 @@ body {
     border-bottom: 1px solid rgba(226, 243, 235, 0.5);
     z-index: 1000;
     width: 100%;
-    backdrop-filter: blur(5px); /* Subtle blur for modern feel */
+    backdrop-filter: blur(5px); 
 }
 
-.logo {
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: #3D5281;
+
+.logo img{
+    max-width: 200px;
+    max-height: 150px;
 }
 
 .navlinks {
@@ -52,12 +52,14 @@ body {
     margin: 0 auto;
     display: flex;
     gap: 3rem;
+    font-size: 19px;
+  
 }
 
 .navlinks a {
     text-decoration: none;
     color: #5B7B7A;
-    font-weight: 500;
+    font-weight: 700;
     transition: 0.3s;
 }
 
@@ -76,8 +78,9 @@ body {
 .signin a {
     text-decoration: none;
     color: #5B7B7A;
-    font-weight: 500;
+    font-weight: 700;
     transition: 0.3s;
+    font-size: 17px;
 }
 
 .signin a:hover {
@@ -125,6 +128,11 @@ body {
         gap: 2rem;
         box-shadow: -5px 0 20px rgba(0, 0, 0, 0.1);
         transition: 0.4s ease;
+    }
+    .logo img{
+        margin-top: 10px;
+        max-width: 120px;
+        
     }
 
     .menu-icon {
@@ -596,7 +604,8 @@ body {
     text-align: center;
   }
   .contact-form {
-    min-width: 100% !important;
+    min-width: 80% !important;
+    
   }
 }
 .overlay {
@@ -605,7 +614,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.1); 
+    background: rgba(242, 255, 0, 0.1); 
     z-index: -1;
 }
 #contact .container {
