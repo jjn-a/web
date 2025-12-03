@@ -643,3 +643,115 @@ body {
   text-align: center;
   color: #395956;
 }
+
+
+.about-section {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+
+.about-title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  margin-bottom: 20px;
+  color: #111;
+}
+
+
+.about-text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+  max-width: 750px;
+  text-wrap: balance;
+}
+
+
+.about-text span {
+  color: yellowgreen; 
+  font-weight: 600;
+}
+
+
+.location-section {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+.location-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #111;
+}
+
+.location-text {
+  font-size: 1.05rem;
+  color: #666;
+  margin-bottom: 25px;
+  line-height: 1.7;
+}
+
+
+.map-container {
+  width: 100%;
+  max-width: 700px;  
+  height: 250px;
+  margin: 0 auto;    
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+
+
+.schedule-box {
+  max-width: 700px;
+  margin: 20px auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.day-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 18px;
+  background: #f7f7f7;
+  border-radius: 12px;
+  font-size: 1.05rem;
+  color: #333;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.day-item .day {
+  font-weight: 600;
+}
+
+.day-item .time {
+  font-weight: 700;
+  color: yellowgreen;
+}
+
+/* E diela - Pushim */
+.day-item.closed {
+  background: #fff0f0;
+}
+
+.day-item.closed .time {
+  color: #d10000;
+}
+
