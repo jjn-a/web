@@ -976,3 +976,50 @@ body {
     .footer-details ul { max-height: none; overflow: visible; padding: 0; }
     .footer-summary { display: none; }
   
+
+
+.service {
+    position: relative;
+    height: 80vh;
+    width: 92%;
+    margin: 40px auto;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 25px;             
+    overflow: hidden;                
+    filter: brightness(0.9);
+    transition: 0.4s ease;
+}
+
+
+
+
+
+.service:hover {
+    filter: brightness(0.6);
+    transform: scale(1.01);          
+}
+
+
+.service-text {
+    position: absolute;
+    bottom: 60px;
+    left: 60px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.service-text h2 {
+    font-size: 48px;
+    font-weight: 900;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.service-text p {
+    font-size: 16px;
+    letter-spacing: 1px;
+    max-width: 400px;
+    opacity: 0.9;
+}
