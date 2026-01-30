@@ -1,0 +1,132 @@
+/* Users Page Header Controls */
+.users-header-controls {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.users-header-controls .search-box {
+    width: 280px;
+}
+
+.users-header-controls .search-box input {
+    padding: 12px 16px 12px 44px;
+    font-size: 0.9rem;
+}
+
+.users-header-controls .search-box svg {
+    left: 14px;
+    width: 20px;
+    height: 20px;
+}
+
+.users-header-controls #user-sort {
+    min-width: 180px;
+    padding: 12px 16px;
+    font-size: 0.9rem;
+}
+
+/* Users Filter Bar */
+.users-filter-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 24px;
+    background: var(--bg-main);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.users-filter-tabs {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.users-filter-tab {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 16px;
+    background: white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: var(--radius-md);
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.users-filter-tab:hover {
+    background: var(--primary-light);
+    border-color: var(--primary);
+    color: var(--text-primary);
+}
+
+.users-filter-tab.active {
+    background: var(--primary);
+    border-color: var(--primary);
+    color: var(--primary-dark);
+}
+
+.users-filter-tab .tab-count {
+    font-size: 0.75rem;
+    padding: 2px 8px;
+    background: rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+}
+
+.users-filter-tab.active .tab-count {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.users-results-count {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
+.users-results-count span {
+    font-weight: 600;
+    color: var(--primary-dark);
+}
+
+/* Mobile Responsive for Users Filter Bar */
+@media (max-width: 768px) {
+    .users-filter-bar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .users-filter-tabs {
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: 4px;
+    }
+    
+    .users-filter-tab {
+        white-space: nowrap;
+    }
+    
+    .users-results-count {
+        width: 100%;
+        text-align: left;
+    }
+    
+    .users-header-controls {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .users-header-controls .search-box {
+        width: 100%;
+    }
+    
+    .users-header-controls #user-sort {
+        width: 100%;
+        min-width: auto;
+    }
+}
+
